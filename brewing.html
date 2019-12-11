@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Kristina Hickey, IS117-005, Fall 2019 -->
+<html lang="en" style="background-color: white">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee with Kristina</title>
+    <link rel="shortcut icon" href="betterlogo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="espresso.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+<header>
+    <a href="index.html">
+        <img src="betterlogo.jpg" height="100px">
+    </a>
+    <h2>Coffee with Kristina</h2>
+    <h3>Learn about the wondrous world of coffee!</h3>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gathering.html">How Coffee is Gathered</a></li>
+        <li><a href="brewing.html" class="current">Brewing Methods</a></li>
+        <li><a href="espresso.html">Espresso</a></li>
+        <li><a>About me</a>
+            <ul>
+                <li><a href="contactpage.html">Contact</a>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+            <h3>Classic Drip</h3>
+            <p>The most commonly known and basic brewing method in America is the classic drip brew. This is the method of most standard coffee makers in household kitchens. Ground beans are placed into a filter and into the machine. Once the proper amount of water is added, the machine heats up the water and drizzles it through the filter, producing the hot coffee we all know and love.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img src="coffeemaker.jpg" alt="Coffee Maker" height="250px">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <h3>Pour Over</h3>
+            <p>Pour over coffee has a similar process to the drip method, but is done by hand with more care and is used more for individual servings. One of the pluses is that it gives the brewer more control over the pouring style. It is usually made using a Chemex brewer where the brewer hand pours the water over the ground beans in smooth circular motions to allow the beans to flower properly.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img src="pourover.jpg" alt="Pour Over" height="250px">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+
+            <h3>French Press</h3>
+            <p>A French Press brews coffee by steeping rather than filtration, providing an even more unique method of coffee preparation. The brewer may steep different ratios of grounds to water depending on their desired strength. Once the beans are finished steep, the metal filter is pushed to the bottom of the beaker from the top, separating the grounds from the coffee to be poured and enjoyed.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img src="frenchpress.jpeg" alt="French Press" height="250px">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <h3>Cold Brew</h3>
+            <p>Cold brewed coffee uses another method of steeping to brew coffee, but over a much longer time and using cold water rather than hot. Cold brew coffee takes about 12-18 hours to brew fully, so if prepared overnight, it can be strained and ready to drink in the morning. Many prefer cold brew over regular since it makes the coffee less acidic and smoother, as well as being able to make iced coffee at home rather than buying it.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img src="coldbrew.jpg" alt="Cold Brew" height="250px">
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Terms of Service  |   Privacy Statement  |  &copy; Kristina Hickey, 2019</p>
+</footer>
+</body>
+</html>

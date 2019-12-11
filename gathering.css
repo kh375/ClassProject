@@ -1,0 +1,144 @@
+/*DEVELOPER: Kristina Hickey, IS117-005, Fall 2019 */
+
+/* header */
+header {
+    padding: 2em 0 2em 0;
+    background: white;
+}
+
+header h2{
+    font-size: 250%;
+    color: saddlebrown;
+    text-align: center;
+    font-family: Candara
+}
+
+header h3 {
+    font-size: 170%;
+    font-style: italic;
+    text-align: center;
+    font-family: Candara;
+}
+header img{
+    float: left;
+    padding-left: 30px;
+}
+
+/* navigation menu */
+#nav_menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    align-content: center;
+    font-family: Candara
+}
+#nav_menu ul li {
+    float: left;
+    width: 20%;
+    align-content: center;
+    font-family: Candara
+}
+#nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: darkolivegreen;
+    color: white;
+    font-weight: bold;
+    font-family: Candara
+}
+#nav_menu a.current{
+    color: yellow;
+}
+#nav_menu ul ul{
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 100%
+}
+#nav_menu ul ul li {
+    float: none;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* body */
+
+body{
+    background-color: antiquewhite;
+}
+/* columns and rows */
+
+.row{
+    padding: 60px;
+    border: black 2px;
+}
+.row h1{
+    text-align: center;
+}
+
+.col-md-3 img{
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+/* footer */
+footer{
+    clear: both;
+    background-color: darkolivegreen;
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+/* tablet portrait to standard 960 */
+@media only screen and (max-width: 959px) {
+    section h1 { font-size: 135%; }
+    section h2, aside h2 { font-size: 120%; }
+}
+
+@media only screen and (max-width: 767px) {
+    header img { float: none; }
+    header { text-align: center; }
+    section {
+        float: none;
+        width: 95%;
+    }
+    aside {
+        float: none;
+        padding-right: 2.5%;
+        width: 95%;
+    }
+    article img { max-width: 30%; }
+    #speakers {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: darkolivegreen !important;
+    }
+}
+#mobile_menu{
+    display: none;
+}
+/* mobile portrait to mobile landscape */
+@media only screen and (max-width: 479px) {
+    body { font-size: 90%; }
+}

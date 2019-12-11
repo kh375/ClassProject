@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Kristina Hickey, IS117-005, Fall 2019 -->
+<html lang="en" style="background-color: white">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee with Kristina</title>
+    <link rel="shortcut icon" href="betterlogo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contactpage.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+<header>
+    <a href="index.html">
+        <img src="betterlogo.jpg" height="100px">
+    </a>
+    <h2>Coffee with Kristina</h2>
+    <h3>Learn about the wondrous world of coffee!</h3>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gathering.html">How Coffee is Gathered</a></li>
+        <li><a href="brewing.html">Brewing Methods</a></li>
+        <li><a href="espresso.html">Espresso</a></li>
+        <li><a>About me</a>
+            <ul>
+                <li><a href="contactpage.html" class="current">Contact</a>
+            </ul>
+        </li>
+    </ul>
+</nav>
+<main>
+    <div class="contact-title">
+        <h1>Let me know what you think!</h1>
+    </div>
+
+    <div class="row">
+        <div class="contact-form">
+            <form id="contact-form" method="post" action="">
+                <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+
+                <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+
+                <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+
+                <input type="submit" class="form-control submit" value="Send Message">
+            </form>
+        </div>
+        <div class="col-md-4">
+            <img src="me.jpg" alt="Me" height="450px">
+        </div>
+        <div class="col-md-3">
+            <p>Thank you so much for visiting my page! I hope you were able to find a new love for the world of coffee! If you would like to contact to me, here are my emails:<br><br></br>krissyhickey5@gmail.com<br><br></br>kh375@njit.edu</p>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>Terms of Service  |   Privacy Statement  |  &copy; Kristina Hickey, 2019</p>
+</footer>
+</body>
+</html>

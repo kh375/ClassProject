@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Kristina Hickey, IS117-005, Fall 2019 -->
+<html lang="en" style="background-color: white">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee with Kristina</title>
+    <link rel="shortcut icon" href="betterlogo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="espresso.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+<header>
+    <a href="index.html">
+        <img src="betterlogo.jpg" height="100px">
+    </a>
+    <h2>Coffee with Kristina</h2>
+    <h3>Learn about the wondrous world of coffee!</h3>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gathering.html" class="current">How Coffee is Gathered</a></li>
+        <li><a href="brewing.html">Brewing Methods</a></li>
+        <li><a href="espresso.html">Espresso</a></li>
+        <li><a>About me</a>
+            <ul>
+                <li><a href="contactpage.html">Contact</a>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+            <h3>Growing</h3>
+            <p>Coffee trees are grown in tropical regions such as many countries in South America and Africa. These trees can take 4-7 years to mature, but when they do, they begin producing fruit known as cherries. When the cherries turn red, that means they are ripe for picking and harvesting begins.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img src="coffeeplant.jpg" alt="Coffee Plant" height="250px">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <h3>Harvesting</h3>
+            <p>The coffee fruit is harvested either by strip picking or by selective picking. With strip picking, all of the fruit on a tree is harvested at once, whether it is ripe or not. Selective picking requires more attention since it involves only picking the ripe fruit, and is therefore more expensive. On average, only about 20% of the cherries picked are then further processed and roasted as coffee beans.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img src="harvesting.jpg" alt="Harvesting" height="250px">
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+
+            <h3>Processing</h3>
+            <p>After coffee is gathered, the cherries are processed by either the wet or dry method, and then completely dried to about 11% moisture in order to be stored properly. Then, before exportation, the coffee is hulled, removing the endocarp from the fruit, and polished, removing any excess skin from the bean inside. They are then sorted by size and weight before being sent off to be roasted.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img src="hulling.jpg" alt="Processing" height="250px">
+
+        </div>
+
+        <div class="col-md-3">
+
+            <h3>Roasting</h3>
+            <p>The final step in this process is the roast, turning the originally green or white coffee beans to the rich brown color we are used to seeing. While being roasted at about 550F, the beans are constantly moving and being turned to keep them from burning. The beans begin to take on a brown color once they reach an internal temperature of 400F. Depending on your taste, you can choose lighter or darker roasts for your bean of choice.</p>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <img src="roasted.jpg" alt="Roasted" height="250px">
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>Terms of Service  |   Privacy Statement  |  &copy; Kristina Hickey, 2019</p>
+</footer>
+</body>
+</html>

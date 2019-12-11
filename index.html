@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!-- DEVELOPER: Kristina Hickey, IS117-005, Fall 2019 -->
+<html lang="en" style="background-color: white">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Coffee with Kristina</title>
+    <link rel="shortcut icon" href="betterlogo.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+    </script>
+</head>
+
+<body>
+<header>
+    <a href="index.html">
+        <img src="betterlogo.jpg" height="100px">
+    </a>
+    <h2>Coffee with Kristina</h2>
+    <h3>Learn about the wondrous world of coffee!</h3>
+</header>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.html" class="current">Home</a></li>
+        <li><a href="gathering.html">How Coffee is Gathered</a></li>
+        <li><a href="brewing.html">Brewing Methods</a></li>
+        <li><a href="espresso.html">Espresso</a></li>
+        <li><a>About me</a>
+            <ul>
+                <li><a href="contactpage.html">Contact</a>
+            </ul>
+        </li>
+    </ul>
+</nav>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="maincups.jpg" alt="Coffee Cup" height="350px">
+            </div>
+            <div class="col-md-2" height="300px" width="200px">
+                <p>Welcome to the Wondrous World of Coffee! As you explore, I hope you learn something new about this wonderful beverage.
+                From being picked off the tree, to picking up your Starbucks order, we will explore the journey of the coffee bean. We will
+                dive into the different brewing methods as well as some of the most common ways to enjoy espresso! So, without further ado,
+                take a look around and expand your knowledge of this beloved drink!</p>
+            </div>
+            <div class="col-md-4">
+                <img src="beans.jpg" alt="Coffee Beans" height="350px">
+            </div>
+        </div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="card" class="col-4" style="width: 33.33%;">
+            <div class="card-body">
+                <h5 class="card-title">Growing and Gathering Process</h5>
+                <p>Click here to learn more about how coffee fruit is grown, gathered, and processed.</p>
+                <a href="gathering.html" class="btn btn-primary">Click Here</a>
+            </div>
+        </div>
+        <div class="card" class="col-4" style="width: 33.33%;">
+            <div class="card-body">
+                <h5 class="card-title">Brewing Methods</h5>
+                <p>Click here to learn more about some different styles and methods of brewing your own coffee.</p>
+        <a href="brewing.html" class="btn btn-primary">Click Here</a>
+    </div>
+</div>
+        <div class="card" class="col-4" style="width: 33.33%;">
+            <div class="card-body">
+                <h5 class="card-title">Espresso</h5>
+                <p>Click here to learn more about espresso and classic espresso drinks.</p>
+                <a href="espresso.html" class="btn btn-primary">Click Here</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Terms of Service  |   Privacy Statement  |  &copy; Kristina Hickey, 2019</p>
+</footer>
+</body>
+</html>
